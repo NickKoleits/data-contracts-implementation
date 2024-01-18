@@ -1,0 +1,33 @@
+name: Order
+description: Represents and order placed by a customer.
+version: 1
+fields:
+  order_id:
+    type: string
+    description: The unique identifier for the order entity.
+    required: true
+
+  order_item_id:
+    type: numeric
+    description: The item id linked to the order.
+    required: true
+
+  product_id:
+    type: string
+    description: THe product id linked to the order item id.
+    required: true
+
+  customer_id:
+    type: string
+    description: The unique identifier for the customer entity.
+    required: true
+
+  quantity:
+    type: numeric
+    decription: The quantity of items purchased in the order
+    required: true
+
+  order_date:
+    type: timestamp
+    description: The date and time the order was placed (UTC).
+    required: true
